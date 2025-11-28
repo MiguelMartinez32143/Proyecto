@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirFitness - Sucursales</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="site">
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <nav class="nav">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="contacto.html" class="nav-link">Inicio</a>
+                    <a href="#beneficios" class="nav-link">Beneficios</a>
+                    <a href="#membresias" class="nav-link">Membresías</a>
+
+                    <div class="nav-more">
+                        <button class="nav-link nav-more-btn" type="button">Más ▾</button>
+                        <div class="nav-more-menu">
+                            <a href="#testimonios" class="nav-more-item">Testimonios</a>
+                            <a href="#faq" class="nav-more-item">Preguntas frecuentes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-center">
+                    <a href="index.html#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
+                        <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img" />
+                    </a>
+                </div>
+
+                <div class="nav-right">
+                    <button class="btn btn-outline-light" type="button" data-open-auth="login">Iniciar sesión</button>
+                    <button class="btn btn-primary" type="button" data-open-auth="register">Registrarse</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="page">
+
+        <!-- HERO -->
+        <section class="container">
+        <h1 class="section-title">NUESTRAS SUCURSALES</h1>
+        <p class="section-description">
+            Explora nuestras sedes distribuidas estratégicamente para brindarte 
+            accesibilidad, comodidad y espacios de entrenamiento modernos.
+        </p>
+        </section>
+
+
+        <!-- BUSCADOR VISUAL -->
+        <section class="section">
+            <div class="container">
+                <div class="branch-search-card">
+                    <h2 class="branch-search-title">Buscar sucursal</h2>
+                    <p class="branch-search-text">Escribe la ciudad o filtra por tipo de sede. Esta búsqueda es solo visual.</p>
+
+                    <form class="branch-search-form">
+                        <input type="text" class="branch-search-input" placeholder="Ejemplo: Bogotá, Medellín, Cali..." />
+
+                        <select class="branch-search-select">
+                            <option value="">Tipo de sede</option>
+                            <option value="24h">24 horas</option>
+                            <option value="estandar">Horario estándar</option>
+                            <option value="virtual">Virtual / online</option>
+                        </select>
+
+                        <button type="button" class="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEDES -->
+<!-- SUCURSALES PRINCIPALES - HERO HORIZONTAL -->
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">Sucursales Principales</h2>
+
+    <!-- Sucursal 1 -->
+    <div class="branch-featured mb-4">
+        <img src="imagenes/s2.avif" alt="Sucursal Norte">
+
+        <div class="branch-featured-content">
+            <h2>Bogotá - Norte</h2>
+            <p>
+                Nuestra sede más completa, con máquinas de alto rendimiento, zona funcional
+                y entrenadores certificados.
+            </p>
+            <p><strong>Dirección:</strong> Calle 120 #7-22</p>
+
+            <button class="btn btn-primary">Ver más</button>
+        </div>
+    </div>
+
+    <!-- Sucursal 2 -->
+    <div class="branch-featured mb-4">
+        <img src="imagenes/s3.webp" alt="Sucursal Centro">
+
+        <div class="branch-featured-content">
+            <h2>Medellín - Premium Plaza</h2>
+            <p>
+                Espacios amplios, zona crossfit, salones de clases grupales y ambiente de alto nivel.
+            </p>
+            <p><strong>Dirección:</strong> Av. Oriental 45-12</p>
+
+            <button class="btn btn-primary">Ver más</button>
+        </div>
+    </div>
+</section>
+
+        <!-- CTA -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="newsletter-card">
+                    <h2 class="section-title">Elige tu sede y empieza hoy</h2>
+                    <p class="section-description">Todas nuestras sedes ofrecen la misma calidad AirFitness.</p>
+
+                    <div class="cta-actions" style="justify-content: center; margin-top: 1.3rem;">
+                        <button class="btn btn-primary" data-open-auth="register">Crear cuenta</button>
+                        <button class="btn btn-ghost" data-open-auth="login">Ya soy miembro</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="section" id="testimonios">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-eyebrow">Lo que dicen</p>
+                    <h2 class="section-title">Miembros de distintas sedes</h2>
+                </header>
+
+                <div class="grid-3">
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <p class="testimonial-text">“Entreno en Zona Norte y siempre encuentro máquinas disponibles.”</p>
+                        <p class="testimonial-name">Laura Gómez</p>
+                        <p class="testimonial-meta">Miembro AirFitness Zona Norte</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <p class="testimonial-text">“Las clases grupales de El Poblado me motivan muchísimo.”</p>
+                        <p class="testimonial-name">Andrés López</p>
+                        <p class="testimonial-meta">Miembro AirFitness El Poblado</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <p class="testimonial-text">“La sede virtual me ayuda cuando viajo.”</p>
+                        <p class="testimonial-name">Paola Rodríguez</p>
+                        <p class="testimonial-meta">Miembro AirFitness Virtual</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Dudas sobre sucursales</h2>
+                    <p class="section-description">Te ayudamos a escoger la sede ideal.</p>
+                </header>
+
+                <div class="faq-list">
+
+                    <details class="faq-item faq-card" open>
+                        <summary class="faq-question">¿Puedo entrenar en cualquier sucursal?</summary>
+                        <p class="faq-answer">Depende de tu plan. Algunos incluyen acceso nacional.</p>
+                    </details>
+
+                    <details class="faq-item faq-card">
+                        <summary class="faq-question">¿Qué pasa si me mudo de ciudad?</summary>
+                        <p class="faq-answer">Puedes solicitar cambio de sede sin costo adicional.</p>
+                    </details>
+
+                    <details class="faq-item faq-card">
+                        <summary class="faq-question">¿Las sucursales manejan los mismos horarios?</summary>
+                        <p class="faq-answer">No todas. Algunas sedes son 24/7.</p>
+                    </details>
+
+                    <details class="faq-item faq-card">
+                        <summary class="faq-question">¿Puedo cambiar de sede solo por una visita?</summary>
+                        <p class="faq-answer">Sí, según tu plan puedes solicitar pases de cortesía.</p>
+                    </details>
+
+                </div>
+
+                <div class="help-cta" id="contacto">
+                    <h3 class="help-title">¿No encuentras una sede cerca?</h3>
+                    <p class="help-text">Escríbenos y te avisaremos cuando abramos una nueva.</p>
+                    <button class="btn btn-ghost">Contactar equipo AirFitness</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="imagenes/logo.jpeg" alt="AirFitness">
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explorar</h4>
+                    <a href="index.html#inicio" class="footer-link">Inicio</a>
+                    <a href="index.html#beneficios" class="footer-link">Beneficios</a>
+                    <a href="index.html#membresias" class="footer-link">Membresías</a>
+                    <a href="#testimonios" class="footer-link">Sucursales</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Comunidad</h4>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#contacto" class="footer-link">Contacto</a>
+                    <a href="#" class="footer-link">Soporte</a>
+                    <a href="#" class="footer-link">Eventos</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Suscribirse</h4>
+                    <p class="footer-text">Recibe noticias sobre nuevas sedes y promociones.</p>
+
+                    <form class="footer-form">
+                        <input type="email" class="footer-input" placeholder="Tu correo electrónico" required />
+                        <button class="btn btn-primary footer-btn" type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2024 AirFitness. Todos los derechos reservados.</p>
+
+                <div class="footer-links-row">
+                    <a href="#" class="footer-link">Política privacidad</a>
+                    <a href="#" class="footer-link">Términos</a>
+                    <a href="#" class="footer-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

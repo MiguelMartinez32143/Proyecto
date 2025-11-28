@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>AirFitness - Gimnasio</title>
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+<body class="site">
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="contacto.html" class="nav-link">Contacto</a>
+          <a href="#membresias" class="nav-link">Membresías</a>
+          <a href="sucursales.html" class="nav-link">Sucursales</a>
+          <div class="nav-more">
+            <button class="nav-link nav-more-btn" type="button">
+              Más ▾
+            </button>
+            <div class="nav-more-menu">
+              <a href="#testimonios" class="nav-more-item">Testimonios</a>
+              <a href="#faq" class="nav-more-item">Preguntas frecuentes</a>
+              <a href="#contacto" class="nav-more-item">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-center">
+          <!-- Logo como imagen -->
+          <a href="#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img" />
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-open-auth="login"
+          >
+            Iniciar sesión
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-open-auth="register"
+          >
+            Registrarse
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="page">
+    <!-- HERO -->
+    <section class="section" id="inicio">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-image-wrapper">
+            <img
+              src="imagenes/a1.jpeg"
+              alt="Instalaciones de gimnasio"
+              class="hero-image"
+            />
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Transforma tu cuerpo, libera tu mente
+              </h1>
+              <p class="hero-text">
+                En AirFitness creemos que el entrenamiento debe ser accesible,
+                efectivo y motivador. Únete a miles de miembros que ya están
+                viviendo su mejor versión.
+              </p>
+              <div class="hero-actions">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-open-auth="register"
+                >
+                  Empezar ahora
+                </button>
+                <a href="#membresias" class="btn btn-ghost">
+                  Ver planes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Ventajas</p>
+          <h2 class="section-title">Por qué elegir AirFitness</h2>
+          <p class="section-description">
+            Nuestras instalaciones están diseñadas para que logres tus objetivos
+            sin distracciones ni limitaciones.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card">
+            <img
+              src="imagenes/a2.jpg"
+              alt="Instalaciones de gimnasio"
+              class="card-image"
+            />
+            <div class="card-body">
+              <p class="card-tag">Instalaciones</p>
+              <h3 class="card-title">Espacios modernos y bien equipados</h3>
+              <p class="card-text">
+                Máquinas de cardio, pesas libres, áreas de entrenamiento
+                funcional y salas especializadas.
+              </p>
+              <button class="card-link" type="button">Recorrer →</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1200&q=80"
+              alt="Gimnasio 24 horas"
+              class="card-image"
+            />
+            <div class="card-body">
+              <p class="card-tag">Flexibilidad</p>
+              <h3 class="card-title">Gimnasio 24 horas</h3>
+              <p class="card-text">
+                Sin contratos largos, sin sorpresas, solo el compromiso que tú
+                decides.
+              </p>
+              <button class="card-link" type="button">Elegir →</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="imagenes/a3.webp"
+              alt="Entrenadores certificados"
+              class="card-image"
+            />
+            <div class="card-body">
+              <p class="card-tag">Apoyo</p>
+              <h3 class="card-title">
+                Entrenadores certificados listos para ayudarte
+              </h3>
+              <p class="card-text">
+                Asesoría personalizada, planes adaptados y motivación constante
+                en cada sesión.
+              </p>
+              <button class="card-link" type="button">Conocer equipo →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA TRANSFORMACIÓN -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card">
+          <h2 class="section-title">Comienza tu transformación hoy</h2>
+          <p class="section-description">
+            No esperes más. Tu mejor versión te está esperando en AirFitness.
+          </p>
+          <div class="cta-actions">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-open-auth="register"
+            >
+              Registrarse
+            </button>
+            <a href="#membresias" class="btn btn-ghost">
+              Ver planes
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section section-dark" id="membresias">
+      <div class="container">
+        <header class="section-header section-header-dark">
+          <p class="section-eyebrow">Planes</p>
+          <h2 class="section-title">Elige tu membresía</h2>
+          <p class="section-description">
+            Tres opciones diseñadas para diferentes necesidades y compromisos.
+          </p>
+        </header>
+
+        <div class="grid-3 plans-grid">
+          <article class="plan-card">
+            <h3 class="plan-name">Básico</h3>
+            <p class="plan-price">$29</p>
+            <p class="plan-period">por mes</p>
+            <ul class="plan-list">
+              <li>Acceso a todas las sucursales</li>
+              <li>Horario de seis a veintitrés horas</li>
+              <li>Uso de equipos y áreas comunes</li>
+            </ul>
+            <button
+              class="btn btn-primary plan-btn"
+              type="button"
+              data-open-auth="register"
+            >
+              Elegir plan
+            </button>
+          </article>
+
+          <article class="plan-card plan-card-featured">
+            <h3 class="plan-name">Estándar</h3>
+            <p class="plan-price">$49</p>
+            <p class="plan-period">por mes</p>
+            <ul class="plan-list">
+              <li>Acceso veinticuatro horas todos los días</li>
+              <li>Clases en grupo incluidas</li>
+              <li>Una sesión mensual con entrenador personal</li>
+              <li>Acceso a la aplicación móvil</li>
+            </ul>
+            <button
+              class="btn btn-primary plan-btn"
+              type="button"
+              data-open-auth="register"
+            >
+              Elegir plan
+            </button>
+          </article>
+
+          <article class="plan-card">
+            <h3 class="plan-name">Premium</h3>
+            <p class="plan-price">$79</p>
+            <p class="plan-period">por mes</p>
+            <ul class="plan-list">
+              <li>Todo lo del plan Estándar</li>
+              <li>Cuatro sesiones mensuales con entrenador personal</li>
+              <li>Nutrición y asesoría de bienestar</li>
+              <li>Acceso prioritario a clases y eventos</li>
+            </ul>
+            <button
+              class="btn btn-primary plan-btn"
+              type="button"
+              data-open-auth="register"
+            >
+              Elegir plan
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Lo que dicen</p>
+          <h2 class="section-title">Historias reales de transformación</h2>
+        </header>
+
+        <div class="grid-3">
+          <article class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">
+              “Cambié mi vida en tres meses. Los entrenadores saben exactamente
+              qué necesitas.”
+            </p>
+            <p class="testimonial-name">Carlos Méndez</p>
+            <p class="testimonial-meta">Miembro desde hace un año</p>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">
+              “El acceso veinticuatro horas fue lo que necesitaba. Entreno
+              cuando puedo, sin presiones.”
+            </p>
+            <p class="testimonial-name">María López</p>
+            <p class="testimonial-meta">Plan Estándar, tres meses</p>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">
+              “Las clases en grupo me mantienen motivado. Aquí encontré
+              comunidad, no solo un gimnasio.”
+            </p>
+            <p class="testimonial-name">Juan Rodríguez</p>
+            <p class="testimonial-meta">Miembro Premium, seis meses</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section-dark" id="contacto">
+      <div class="container">
+        <div class="newsletter-card">
+          <h2 class="section-title">Mantente informado</h2>
+          <p class="section-description">
+            Recibe consejos, promociones y novedades directamente en tu correo.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              required
+              class="newsletter-input"
+              placeholder="Tu correo aquí"
+            />
+            <button class="btn btn-primary" type="submit">
+              Suscribirse
+            </button>
+          </form>
+          <p class="newsletter-note">
+            Al suscribirte aceptas nuestros términos y política de privacidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Preguntas</h2>
+          <p class="section-description">
+            Resolvemos tus dudas sobre membresías, acceso y servicios.
+          </p>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item faq-card" open>
+            <summary class="faq-question">
+              ¿Puedo cancelar cuando quiera?
+            </summary>
+            <p class="faq-answer">
+              Sí. No hay contratos largos ni penalizaciones. Cancela tu
+              membresía cuando lo decidas sin complicaciones.
+            </p>
+          </details>
+
+          <details class="faq-item faq-card">
+            <summary class="faq-question">
+              ¿Qué incluye el plan Básico?
+            </summary>
+            <p class="faq-answer">
+              Acceso a todas nuestras sucursales de seis a veintitrés horas,
+              equipos completos y áreas comunes. Perfecto para comenzar.
+            </p>
+          </details>
+
+          <details class="faq-item faq-card">
+            <summary class="faq-question">
+              ¿Hay entrenadores disponibles?
+            </summary>
+            <p class="faq-answer">
+              Todos nuestros entrenadores están certificados. Los planes
+              Estándar y Premium incluyen sesiones personalizadas adaptadas a
+              tus objetivos.
+            </p>
+          </details>
+
+          <details class="faq-item faq-card">
+            <summary class="faq-question">
+              ¿Funciona la aplicación móvil?
+            </summary>
+            <p class="faq-answer">
+              La aplicación está disponible para iOS y Android. Monitorea tu
+              progreso, reserva clases y accede a rutinas personalizadas.
+            </p>
+          </details>
+
+          <details class="faq-item faq-card">
+            <summary class="faq-question">
+              ¿Hay descuentos para grupos?
+            </summary>
+            <p class="faq-answer">
+              Sí. Contacta con nuestro equipo para conocer opciones especiales
+              para empresas y grupos de amigos.
+            </p>
+          </details>
+        </div>
+
+        <div class="help-cta">
+          <h3 class="help-title">¿Necesitas más ayuda?</h3>
+          <p class="help-text">
+            Nuestro equipo está listo para responder tus preguntas.
+          </p>
+          <button class="btn btn-ghost" type="button" >
+            <a href="contacto.html">
+            Contactar
+            </a>
+            
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" />
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Explorar</h4>
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <a href="#beneficios" class="footer-link">Beneficios</a>
+          <a href="#membresias" class="footer-link">Membresías</a>
+          <a href="#testimonios" class="footer-link">Rutinas</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Comunidad</h4>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#contacto" class="footer-link">Contacto</a>
+          <a href="#" class="footer-link">Soporte</a>
+          <a href="#" class="footer-link">Eventos</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Suscribirse</h4>
+          <p class="footer-text">
+            Recibe noticias sobre nuevas rutinas, promociones y
+            actualizaciones de AirFitness.
+          </p>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Tu correo electrónico"
+              required
+            />
+            <button class="btn btn-primary footer-btn" type="submit">
+              Suscribir
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2024 AirFitness. Todos los derechos reservados.
+        </p>
+        <div class="footer-links-row">
+          <a href="#" class="footer-link">Política privacidad</a>
+          <a href="#" class="footer-link">Términos de servicio</a>
+          <a href="#" class="footer-link">Configurar cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODALES LOGIN / REGISTRO ========== -->
+  <div id="auth-overlay" class="auth-overlay hidden">
+    <div
+      class="auth-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="auth-title"
+    >
+      <button class="auth-close" type="button" data-close-auth>&times;</button>
+
+      <!-- LOGIN -->
+      <div id="auth-login" class="auth-panel">
+        <h2 id="auth-title" class="auth-title">Inicia sesión</h2>
+        <p class="auth-subtitle">
+          Accede a tus rutinas, progreso y membresía activa en AirFitness.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Correo electrónico
+            <input
+              type="email"
+              required
+              class="auth-input"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="••••••••"
+            />
+          </label>
+
+          <div class="auth-row">
+            <label class="auth-checkbox">
+              <input type="checkbox" />
+              <span>Recordarme</span>
+            </label>
+            <button type="button" class="auth-link">
+              ¿Olvidaste tu contraseña?
+            </button>
+          </div>
+
+          <button type="submit" class="auth-btn-primary">
+            Iniciar sesión
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿No tienes cuenta?
+          <button
+            type="button"
+            class="auth-link"
+            data-switch-auth="register"
+          >
+            Regístrate aquí
+          </button>
+        </p>
+      </div>
+
+      <!-- REGISTRO -->
+      <div id="auth-register" class="auth-panel hidden">
+        <h2 class="auth-title">Crea tu cuenta</h2>
+        <p class="auth-subtitle">
+          Únete a AirFitness y empieza tu transformación hoy mismo.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Nombre completo
+            <input
+              type="text"
+              required
+              class="auth-input"
+              placeholder="Nombre y apellido"
+            />
+          </label>
+
+          <label class="auth-label">
+            Correo electrónico
+            <input
+              type="email"
+              required
+              class="auth-input"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="Mínimo 8 caracteres"
+            />
+          </label>
+
+          <label class="auth-label">
+            Confirmar contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="Repite tu contraseña"
+            />
+          </label>
+
+          <button type="submit" class="auth-btn-primary">
+            Crear cuenta
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿Ya tienes cuenta?
+          <button
+            type="button"
+            class="auth-link"
+            data-switch-auth="login"
+          >
+            Inicia sesión
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

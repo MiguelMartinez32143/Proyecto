@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>AirFitness - Contacto</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+<body class="site">
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+          <a href="index.html#membresias" class="nav-link">Membresías</a>
+          <div class="nav-more">
+            <button class="nav-link nav-more-btn" type="button">
+              Más ▾
+            </button>
+            <div class="nav-more-menu">
+              <a href="sucursales.html#inicio" class="nav-more-item">Sucursales</a>
+              <a href="index.html#testimonios" class="nav-more-item">Testimonios</a>
+              <a href="#contacto" class="nav-more-item">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-center">
+          <!-- Logo como imagen -->
+          <a href="index.html#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
+            <img src="logo.jpeg" alt="AirFitness" class="logo-img" />
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <button
+            class="btn btn-outline-light"
+            type="button"
+            data-open-auth="login"
+          >
+            Iniciar sesión
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-open-auth="register"
+          >
+            Registrarse
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="page">
+    <!-- HERO CONTACTO -->
+    <section class="section contact-hero">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title">Contáctanos</h1>
+          <p class="section-description">
+            ¿Tienes preguntas o quieres conocernos mejor? Escríbenos tu mensaje y te responderemos pronto.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- FORMULARIO + INFO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Columna izquierda: info -->
+          <aside class="contact-info">
+            <p class="contact-eyebrow">Formulario</p>
+            <h2 class="contact-title">Envíanos tu mensaje</h2>
+            <p class="contact-text">
+              Completa los datos y nos pondremos en contacto contigo para resolver tus dudas o ayudarte a elegir el plan ideal.
+            </p>
+
+            <ul class="contact-data-list">
+              <li>
+                <span class="contact-data-label">Correo</span>
+                <a href="mailto:contacto@airfitness.com" class="contact-data-link">
+                  contacto@airfitness.com
+                </a>
+              </li>
+              <li>
+                <span class="contact-data-label">Teléfono</span>
+                <a href="tel:+56912345678" class="contact-data-link">
+                  +56 9 1234 5678
+                </a>
+              </li>
+              <li>
+                <span class="contact-data-label">Dirección</span>
+                <p class="contact-data-text">
+                  Av. Fitness 1230, Santiago, Chile
+                </p>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Columna derecha: formulario -->
+          <section class="contact-form-card" aria-label="Formulario de contacto AirFitness">
+            <form class="contact-form">
+              <div class="contact-row contact-row-2">
+                <label class="contact-field">
+                  Nombre
+                  <input type="text" class="contact-input" placeholder="Nombre" required />
+                </label>
+                <label class="contact-field">
+                  Apellido
+                  <input type="text" class="contact-input" placeholder="Apellido" required />
+                </label>
+              </div>
+
+              <div class="contact-row contact-row-2">
+                <label class="contact-field">
+                  Correo
+                  <input type="email" class="contact-input" placeholder="tucorreo@ejemplo.com" required />
+                </label>
+                <label class="contact-field">
+                  Teléfono
+                  <input type="tel" class="contact-input" placeholder="+56 9 1234 5678" />
+                </label>
+              </div>
+
+              <div class="contact-row">
+                <label class="contact-field">
+                  Asunto de consulta
+                  <select class="contact-input contact-select">
+                    <option value="">Selecciona una opción</option>
+                    <option value="planes">Planes y membresías</option>
+                    <option value="sucursales">Sucursales y horarios</option>
+                    <option value="pagos">Pagos y facturación</option>
+                    <option value="soporte">Soporte de la aplicación</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="contact-row">
+                <fieldset class="contact-field contact-fieldset">
+                  <legend>¿Cuál es tu perfil?</legend>
+                  <div class="contact-options-grid">
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Principiante</span>
+                    </label>
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Intermedio</span>
+                    </label>
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Avanzado</span>
+                    </label>
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Atleta profesional</span>
+                    </label>
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Otro perfil</span>
+                    </label>
+                    <label class="contact-option">
+                      <input type="radio" name="perfil" />
+                      <span>Otro</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="contact-row">
+                <label class="contact-field">
+                  Mensaje
+                  <textarea
+                    class="contact-input contact-textarea"
+                    rows="4"
+                    placeholder="Escribe tu consulta aquí"
+                    required
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="contact-row contact-row-between">
+                <label class="contact-checkbox">
+                  <input type="checkbox" required />
+                  <span>Acepto los términos de privacidad</span>
+                </label>
+
+                <button type="submit" class="btn btn-primary">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="logo.jpeg" alt="AirFitness" />
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Explorar</h4>
+          <a href="index.html#inicio" class="footer-link">Inicio</a>
+          <a href="index.html#beneficios" class="footer-link">Beneficios</a>
+          <a href="index.html#membresias" class="footer-link">Membresías</a>
+          <a href="sucursales.html#inicio" class="footer-link">Sucursales</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Comunidad</h4>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#contacto" class="footer-link">Contacto</a>
+          <a href="#" class="footer-link">Soporte</a>
+          <a href="#" class="footer-link">Eventos</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Suscribirse</h4>
+          <p class="footer-text">
+            Recibe noticias sobre nuevas rutinas, promociones y
+            actualizaciones de AirFitness.
+          </p>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Tu correo electrónico"
+              required
+            />
+            <button class="btn btn-primary footer-btn" type="submit">
+              Suscribir
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2024 AirFitness. Todos los derechos reservados.
+        </p>
+        <div class="footer-links-row">
+          <a href="#" class="footer-link">Política privacidad</a>
+          <a href="#" class="footer-link">Términos de servicio</a>
+          <a href="#" class="footer-link">Configurar cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODALES LOGIN / REGISTRO ========== -->
+  <div id="auth-overlay" class="auth-overlay hidden">
+    <div
+      class="auth-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="auth-title"
+    >
+      <button class="auth-close" type="button" data-close-auth>&times;</button>
+
+      <!-- LOGIN -->
+      <div id="auth-login" class="auth-panel">
+        <h2 id="auth-title" class="auth-title">Inicia sesión</h2>
+        <p class="auth-subtitle">
+          Accede a tus rutinas, progreso y membresía activa en AirFitness.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Correo electrónico
+            <input
+              type="email"
+              required
+              class="auth-input"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="••••••••"
+            />
+          </label>
+
+          <div class="auth-row">
+            <label class="auth-checkbox">
+              <input type="checkbox" />
+              <span>Recordarme</span>
+            </label>
+            <button type="button" class="auth-link">
+              ¿Olvidaste tu contraseña?
+            </button>
+          </div>
+
+          <button type="submit" class="auth-btn-primary">
+            Iniciar sesión
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿No tienes cuenta?
+          <button
+            type="button"
+            class="auth-link"
+            data-switch-auth="register"
+          >
+            Regístrate aquí
+          </button>
+        </p>
+      </div>
+
+      <!-- REGISTRO -->
+      <div id="auth-register" class="auth-panel hidden">
+        <h2 class="auth-title">Crea tu cuenta</h2>
+        <p class="auth-subtitle">
+          Únete a AirFitness y empieza tu transformación hoy mismo.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Nombre completo
+            <input
+              type="text"
+              required
+              class="auth-input"
+              placeholder="Nombre y apellido"
+            />
+          </label>
+
+          <label class="auth-label">
+            Correo electrónico
+            <input
+              type="email"
+              required
+              class="auth-input"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="Mínimo 8 caracteres"
+            />
+          </label>
+
+          <label class="auth-label">
+            Confirmar contraseña
+            <input
+              type="password"
+              required
+              class="auth-input"
+              placeholder="Repite tu contraseña"
+            />
+          </label>
+
+          <button type="submit" class="auth-btn-primary">
+            Crear cuenta
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿Ya tienes cuenta?
+          <button
+            type="button"
+            class="auth-link"
+            data-switch-auth="login"
+          >
+            Inicia sesión
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
