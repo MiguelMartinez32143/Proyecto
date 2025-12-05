@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AirFitness - Gimnasio</title>
 
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
@@ -20,50 +14,44 @@
   <!-- JS -->
   <script src="script.js" defer></script>
 </head>
+
 <body class="site">
+  <!-- ========== HEADER ========== -->
   <!-- ========== HEADER ========== -->
   <header class="site-header">
     <div class="container header-inner">
       <nav class="nav">
+
+        <!-- LEFT -->
         <div class="nav-left">
-          <a href="contacto.html" class="nav-link">Contacto</a>
-          <a href="#membresias" class="nav-link">Membresías</a>
-          <a href="sucursales.html" class="nav-link">Sucursales</a>
+          <a href="index.html#inicio" class="nav-link">Inicio</a>
+          <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+          <a href="index.html#membresias" class="nav-link">Membresías</a>
+
           <div class="nav-more">
-            <button class="nav-link nav-more-btn" type="button">
-              Más ▾
-            </button>
+            <button class="nav-link nav-more-btn" type="button">Más ▾</button>
+
             <div class="nav-more-menu">
-              <a href="#testimonios" class="nav-more-item">Testimonios</a>
-              <a href="#faq" class="nav-more-item">Preguntas frecuentes</a>
-              <a href="#contacto" class="nav-more-item">Contacto</a>
+              <a href="sucursales.html" class="nav-more-item">Sucursales</a>
+              <a href="rutinas.html" class="nav-more-item">Rutinas</a>
+              <a href="contacto.html" class="nav-more-item">Contacto</a>
             </div>
           </div>
         </div>
 
+        <!-- CENTER -->
         <div class="nav-center">
-          <!-- Logo como imagen -->
-          <a href="#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
-            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img" />
+          <a href="index.html#inicio" class="logo-mark">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img">
           </a>
         </div>
 
+        <!-- RIGHT -->
         <div class="nav-right">
-          <button
-            class="btn btn-outline-light"
-            type="button"
-            data-open-auth="login"
-          >
-            Iniciar sesión
-          </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-open-auth="register"
-          >
-            Registrarse
-          </button>
+          <button class="btn btn-outline-light" data-open-auth="login">Iniciar sesión</button>
+          <button class="btn btn-primary" data-open-auth="register">Registrarse</button>
         </div>
+
       </nav>
     </div>
   </header>
@@ -75,11 +63,7 @@
       <div class="container">
         <div class="hero-card">
           <div class="hero-image-wrapper">
-            <img
-              src="imagenes/a1.jpeg"
-              alt="Instalaciones de gimnasio"
-              class="hero-image"
-            />
+            <img src="imagenes/a1.jpeg" alt="Instalaciones de gimnasio" class="hero-image" />
             <div class="hero-overlay"></div>
             <div class="hero-content">
               <h1 class="hero-title">
@@ -91,11 +75,7 @@
                 viviendo su mejor versión.
               </p>
               <div class="hero-actions">
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-open-auth="register"
-                >
+                <button class="btn btn-primary" type="button" data-open-auth="register">
                   Empezar ahora
                 </button>
                 <a href="#membresias" class="btn btn-ghost">
@@ -122,11 +102,7 @@
 
         <div class="grid-3">
           <article class="card">
-            <img
-              src="imagenes/a2.jpg"
-              alt="Instalaciones de gimnasio"
-              class="card-image"
-            />
+            <img src="imagenes/a2.jpg" alt="Instalaciones de gimnasio" class="card-image" />
             <div class="card-body">
               <p class="card-tag">Instalaciones</p>
               <h3 class="card-title">Espacios modernos y bien equipados</h3>
@@ -139,11 +115,7 @@
           </article>
 
           <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1200&q=80"
-              alt="Gimnasio 24 horas"
-              class="card-image"
-            />
+            <img src="imagenes/s1.jpeg" alt="Gimnasio 24 horas" class="card-image" />
             <div class="card-body">
               <p class="card-tag">Flexibilidad</p>
               <h3 class="card-title">Gimnasio 24 horas</h3>
@@ -156,11 +128,7 @@
           </article>
 
           <article class="card">
-            <img
-              src="imagenes/a3.webp"
-              alt="Entrenadores certificados"
-              class="card-image"
-            />
+            <img src="imagenes/a3.webp" alt="Entrenadores certificados" class="card-image" />
             <div class="card-body">
               <p class="card-tag">Apoyo</p>
               <h3 class="card-title">
@@ -186,11 +154,7 @@
             No esperes más. Tu mejor versión te está esperando en AirFitness.
           </p>
           <div class="cta-actions">
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-open-auth="register"
-            >
+            <button class="btn btn-primary" type="button" data-open-auth="register">
               Registrarse
             </button>
             <a href="#membresias" class="btn btn-ghost">
@@ -222,11 +186,7 @@
               <li>Horario de seis a veintitrés horas</li>
               <li>Uso de equipos y áreas comunes</li>
             </ul>
-            <button
-              class="btn btn-primary plan-btn"
-              type="button"
-              data-open-auth="register"
-            >
+            <button class="btn btn-primary plan-btn" type="button" data-open-auth="register">
               Elegir plan
             </button>
           </article>
@@ -241,11 +201,7 @@
               <li>Una sesión mensual con entrenador personal</li>
               <li>Acceso a la aplicación móvil</li>
             </ul>
-            <button
-              class="btn btn-primary plan-btn"
-              type="button"
-              data-open-auth="register"
-            >
+            <button class="btn btn-primary plan-btn" type="button" data-open-auth="register">
               Elegir plan
             </button>
           </article>
@@ -260,11 +216,7 @@
               <li>Nutrición y asesoría de bienestar</li>
               <li>Acceso prioritario a clases y eventos</li>
             </ul>
-            <button
-              class="btn btn-primary plan-btn"
-              type="button"
-              data-open-auth="register"
-            >
+            <button class="btn btn-primary plan-btn" type="button" data-open-auth="register">
               Elegir plan
             </button>
           </article>
@@ -284,8 +236,8 @@
           <article class="testimonial-card">
             <p class="testimonial-stars">★★★★★</p>
             <p class="testimonial-text">
-              “Cambié mi vida en tres meses. Los entrenadores saben exactamente
-              qué necesitas.”
+              "Cambié mi vida en tres meses. Los entrenadores saben exactamente
+              qué necesitas."
             </p>
             <p class="testimonial-name">Carlos Méndez</p>
             <p class="testimonial-meta">Miembro desde hace un año</p>
@@ -294,8 +246,8 @@
           <article class="testimonial-card">
             <p class="testimonial-stars">★★★★★</p>
             <p class="testimonial-text">
-              “El acceso veinticuatro horas fue lo que necesitaba. Entreno
-              cuando puedo, sin presiones.”
+              "El acceso veinticuatro horas fue lo que necesitaba. Entreno
+              cuando puedo, sin presiones."
             </p>
             <p class="testimonial-name">María López</p>
             <p class="testimonial-meta">Plan Estándar, tres meses</p>
@@ -304,8 +256,8 @@
           <article class="testimonial-card">
             <p class="testimonial-stars">★★★★★</p>
             <p class="testimonial-text">
-              “Las clases en grupo me mantienen motivado. Aquí encontré
-              comunidad, no solo un gimnasio.”
+              "Las clases en grupo me mantienen motivado. Aquí encontré
+              comunidad, no solo un gimnasio."
             </p>
             <p class="testimonial-name">Juan Rodríguez</p>
             <p class="testimonial-meta">Miembro Premium, seis meses</p>
@@ -323,12 +275,7 @@
             Recibe consejos, promociones y novedades directamente en tu correo.
           </p>
           <form class="newsletter-form">
-            <input
-              type="email"
-              required
-              class="newsletter-input"
-              placeholder="Tu correo aquí"
-            />
+            <input type="email" required class="newsletter-input" placeholder="Tu correo aquí" />
             <button class="btn btn-primary" type="submit">
               Suscribirse
             </button>
@@ -351,7 +298,7 @@
         </header>
 
         <div class="faq-list">
-          <details class="faq-item faq-card" open>
+          <details class="faq-item faq-card">
             <summary class="faq-question">
               ¿Puedo cancelar cuando quiera?
             </summary>
@@ -408,12 +355,7 @@
           <p class="help-text">
             Nuestro equipo está listo para responder tus preguntas.
           </p>
-          <button class="btn btn-ghost" type="button" >
-            <a href="contacto.html">
-            Contactar
-            </a>
-            
-          </button>
+          <a href="contacto.html" class="btn btn-ghost">Contactar</a>
         </div>
       </div>
     </section>
@@ -433,7 +375,7 @@
           <a href="#inicio" class="footer-link">Inicio</a>
           <a href="#beneficios" class="footer-link">Beneficios</a>
           <a href="#membresias" class="footer-link">Membresías</a>
-          <a href="#testimonios" class="footer-link">Rutinas</a>
+          <a href="rutinas.html" class="footer-link">Rutinas</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-heading">Comunidad</h4>
@@ -449,12 +391,7 @@
             actualizaciones de AirFitness.
           </p>
           <form class="footer-form">
-            <input
-              type="email"
-              class="footer-input"
-              placeholder="Tu correo electrónico"
-              required
-            />
+            <input type="email" class="footer-input" placeholder="Tu correo electrónico" required />
             <button class="btn btn-primary footer-btn" type="submit">
               Suscribir
             </button>
@@ -477,12 +414,7 @@
 
   <!-- ========== MODALES LOGIN / REGISTRO ========== -->
   <div id="auth-overlay" class="auth-overlay hidden">
-    <div
-      class="auth-modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="auth-title"
-    >
+    <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
       <button class="auth-close" type="button" data-close-auth>&times;</button>
 
       <!-- LOGIN -->
@@ -495,22 +427,12 @@
         <form class="auth-form">
           <label class="auth-label">
             Correo electrónico
-            <input
-              type="email"
-              required
-              class="auth-input"
-              placeholder="tucorreo@ejemplo.com"
-            />
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
           </label>
 
           <label class="auth-label">
             Contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="••••••••"
-            />
+            <input type="password" required class="auth-input" placeholder="••••••••" />
           </label>
 
           <div class="auth-row">
@@ -530,11 +452,7 @@
 
         <p class="auth-switch-text">
           ¿No tienes cuenta?
-          <button
-            type="button"
-            class="auth-link"
-            data-switch-auth="register"
-          >
+          <button type="button" class="auth-link" data-switch-auth="register">
             Regístrate aquí
           </button>
         </p>
@@ -550,42 +468,22 @@
         <form class="auth-form">
           <label class="auth-label">
             Nombre completo
-            <input
-              type="text"
-              required
-              class="auth-input"
-              placeholder="Nombre y apellido"
-            />
+            <input type="text" required class="auth-input" placeholder="Nombre y apellido" />
           </label>
 
           <label class="auth-label">
             Correo electrónico
-            <input
-              type="email"
-              required
-              class="auth-input"
-              placeholder="tucorreo@ejemplo.com"
-            />
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
           </label>
 
           <label class="auth-label">
             Contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="Mínimo 8 caracteres"
-            />
+            <input type="password" required class="auth-input" placeholder="Mínimo 8 caracteres" />
           </label>
 
           <label class="auth-label">
             Confirmar contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="Repite tu contraseña"
-            />
+            <input type="password" required class="auth-input" placeholder="Repite tu contraseña" />
           </label>
 
           <button type="submit" class="auth-btn-primary">
@@ -595,11 +493,7 @@
 
         <p class="auth-switch-text">
           ¿Ya tienes cuenta?
-          <button
-            type="button"
-            class="auth-link"
-            data-switch-auth="login"
-          >
+          <button type="button" class="auth-link" data-switch-auth="login">
             Inicia sesión
           </button>
         </p>
@@ -607,4 +501,5 @@
     </div>
   </div>
 </body>
+
 </html>

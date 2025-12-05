@@ -9,7 +9,8 @@
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
 
     <!-- Estilos -->
     <link rel="stylesheet" href="styles.css" />
@@ -24,31 +25,37 @@
     <header class="site-header">
         <div class="container header-inner">
             <nav class="nav">
+
+                <!-- LEFT -->
                 <div class="nav-left">
-                    <a href="index.html" class="nav-link">Inicio</a>
-                    <a href="contacto.html" class="nav-link">Inicio</a>
-                    <a href="#beneficios" class="nav-link">Beneficios</a>
-                    <a href="#membresias" class="nav-link">Membresías</a>
+                    <a href="index.html#inicio" class="nav-link">Inicio</a>
+                    <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+                    <a href="index.html#membresias" class="nav-link">Membresías</a>
 
                     <div class="nav-more">
                         <button class="nav-link nav-more-btn" type="button">Más ▾</button>
+
                         <div class="nav-more-menu">
-                            <a href="#testimonios" class="nav-more-item">Testimonios</a>
-                            <a href="#faq" class="nav-more-item">Preguntas frecuentes</a>
+                            <a href="sucursales.html" class="nav-more-item">Sucursales</a>
+                            <a href="rutinas.html" class="nav-more-item">Rutinas</a>
+                            <a href="contacto.html" class="nav-more-item">Contacto</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- CENTER -->
                 <div class="nav-center">
-                    <a href="index.html#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
-                        <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img" />
+                    <a href="index.html#inicio" class="logo-mark">
+                        <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img">
                     </a>
                 </div>
 
+                <!-- RIGHT -->
                 <div class="nav-right">
-                    <button class="btn btn-outline-light" type="button" data-open-auth="login">Iniciar sesión</button>
-                    <button class="btn btn-primary" type="button" data-open-auth="register">Registrarse</button>
+                    <button class="btn btn-outline-light" data-open-auth="login">Iniciar sesión</button>
+                    <button class="btn btn-primary" data-open-auth="register">Registrarse</button>
                 </div>
+
             </nav>
         </div>
     </header>
@@ -58,23 +65,25 @@
 
         <!-- HERO -->
         <section class="container">
-        <h1 class="section-title">NUESTRAS SUCURSALES</h1>
-        <p class="section-description">
-            Explora nuestras sedes distribuidas estratégicamente para brindarte 
-            accesibilidad, comodidad y espacios de entrenamiento modernos.
-        </p>
+            <h1 class="section-title">NUESTRAS SUCURSALES</h1>
+            <p class="section-description">
+                Explora nuestras sedes distribuidas estratégicamente para brindarte
+                accesibilidad, comodidad y espacios de entrenamiento modernos.
+            </p>
         </section>
 
 
         <!-- BUSCADOR VISUAL -->
         <section class="section">
-            <div class="container">
+            <div class="container"> 
                 <div class="branch-search-card">
                     <h2 class="branch-search-title">Buscar sucursal</h2>
-                    <p class="branch-search-text">Escribe la ciudad o filtra por tipo de sede. Esta búsqueda es solo visual.</p>
+                    <p class="branch-search-text">Escribe la ciudad o filtra por tipo de sede. Esta búsqueda es solo
+                        visual.</p>
 
                     <form class="branch-search-form">
-                        <input type="text" class="branch-search-input" placeholder="Ejemplo: Bogotá, Medellín, Cali..." />
+                        <input type="text" class="branch-search-input"
+                            placeholder="Ejemplo: Bogotá, Medellín, Cali..." />
 
                         <select class="branch-search-select">
                             <option value="">Tipo de sede</option>
@@ -89,42 +98,41 @@
             </div>
         </section>
 
-        <!-- SEDES -->
-<!-- SUCURSALES PRINCIPALES - HERO HORIZONTAL -->
-<section class="container my-5">
-    <h2 class="text-center fw-bold mb-4">Sucursales Principales</h2>
+        <!-- SUCURSALES PRINCIPALES - HERO HORIZONTAL -->
+        <section class="container my-5">
+            <h2 class="text-center fw-bold mb-4">Sucursales Principales</h2>
 
-    <!-- Sucursal 1 -->
-    <div class="branch-featured mb-4">
-        <img src="imagenes/s2.avif" alt="Sucursal Norte">
+            <!-- Sucursal 1 -->
+            <div class="branch-featured mb-4">
+                <img src="imagenes/s2.avif" alt="Sucursal Norte">
 
-        <div class="branch-featured-content">
-            <h2>Bogotá - Norte</h2>
-            <p>
-                Nuestra sede más completa, con máquinas de alto rendimiento, zona funcional
-                y entrenadores certificados.
-            </p>
-            <p><strong>Dirección:</strong> Calle 120 #7-22</p>
+                <div class="branch-featured-content">
+                    <h2>Bogotá - Norte</h2>
+                    <h4>
+                        Nuestra sede más completa, con máquinas de alto rendimiento, zona funcional
+                        y entrenadores certificados.
+                    </h4>
+                    <h4><strong>Dirección:</strong> Calle 120 #7-22</h4>
 
-            <button class="btn btn-primary">Ver más</button>
-        </div>
-    </div>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
 
-    <!-- Sucursal 2 -->
-    <div class="branch-featured mb-4">
-        <img src="imagenes/s3.webp" alt="Sucursal Centro">
+            <!-- Sucursal 2 -->
+            <div class="branch-featured mb-4">
+                <img src="imagenes/s3.webp" alt="Sucursal Centro">
 
-        <div class="branch-featured-content">
-            <h2>Medellín - Premium Plaza</h2>
-            <p>
-                Espacios amplios, zona crossfit, salones de clases grupales y ambiente de alto nivel.
-            </p>
-            <p><strong>Dirección:</strong> Av. Oriental 45-12</p>
+                <div class="branch-featured-content">
+                    <h2>Medellín - Premium Plaza</h2>
+                    <h4>
+                        Espacios amplios, zona crossfit, salones de clases grupales y ambiente de alto nivel.
+                    </h4>
+                    <h4><strong>Dirección:</strong> Av. Oriental 45-12</h4>
 
-            <button class="btn btn-primary">Ver más</button>
-        </div>
-    </div>
-</section>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+        </section>
 
         <!-- CTA -->
         <section class="section section-dark">
@@ -152,21 +160,22 @@
                 <div class="grid-3">
                     <article class="testimonial-card">
                         <p class="testimonial-stars">★★★★★</p>
-                        <p class="testimonial-text">“Entreno en Zona Norte y siempre encuentro máquinas disponibles.”</p>
+                        <p class="testimonial-text">"Entreno en Zona Norte y siempre encuentro máquinas disponibles."
+                        </p>
                         <p class="testimonial-name">Laura Gómez</p>
                         <p class="testimonial-meta">Miembro AirFitness Zona Norte</p>
                     </article>
 
                     <article class="testimonial-card">
                         <p class="testimonial-stars">★★★★★</p>
-                        <p class="testimonial-text">“Las clases grupales de El Poblado me motivan muchísimo.”</p>
+                        <p class="testimonial-text">"Las clases grupales de El Poblado me motivan muchísimo."</p>
                         <p class="testimonial-name">Andrés López</p>
                         <p class="testimonial-meta">Miembro AirFitness El Poblado</p>
                     </article>
 
                     <article class="testimonial-card">
                         <p class="testimonial-stars">★★★★★</p>
-                        <p class="testimonial-text">“La sede virtual me ayuda cuando viajo.”</p>
+                        <p class="testimonial-text">"La sede virtual me ayuda cuando viajo."</p>
                         <p class="testimonial-name">Paola Rodríguez</p>
                         <p class="testimonial-meta">Miembro AirFitness Virtual</p>
                     </article>
@@ -209,7 +218,7 @@
                 <div class="help-cta" id="contacto">
                     <h3 class="help-title">¿No encuentras una sede cerca?</h3>
                     <p class="help-text">Escríbenos y te avisaremos cuando abramos una nueva.</p>
-                    <button class="btn btn-ghost">Contactar equipo AirFitness</button>
+                    <a href="contacto.html" class="btn btn-ghost">Contactar equipo AirFitness</a>
                 </div>
             </div>
         </section>
@@ -232,13 +241,13 @@
                     <a href="index.html#inicio" class="footer-link">Inicio</a>
                     <a href="index.html#beneficios" class="footer-link">Beneficios</a>
                     <a href="index.html#membresias" class="footer-link">Membresías</a>
-                    <a href="#testimonios" class="footer-link">Sucursales</a>
+                    <a href="sucursales.html" class="footer-link">Sucursales</a>
                 </div>
 
                 <div class="footer-col">
                     <h4 class="footer-heading">Comunidad</h4>
                     <a href="#" class="footer-link">Blog</a>
-                    <a href="#contacto" class="footer-link">Contacto</a>
+                    <a href="contacto.html" class="footer-link">Contacto</a>
                     <a href="#" class="footer-link">Soporte</a>
                     <a href="#" class="footer-link">Eventos</a>
                 </div>
@@ -266,5 +275,95 @@
         </div>
     </footer>
 
+    <!-- ========== MODALES LOGIN / REGISTRO ========== -->
+    <div id="auth-overlay" class="auth-overlay hidden">
+        <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+            <button class="auth-close" type="button" data-close-auth>&times;</button>
+
+            <!-- LOGIN -->
+            <div id="auth-login" class="auth-panel">
+                <h2 id="auth-title" class="auth-title">Inicia sesión</h2>
+                <p class="auth-subtitle">
+                    Accede a tus rutinas, progreso y membresía activa en AirFitness.
+                </p>
+
+                <form class="auth-form">
+                    <label class="auth-label">
+                        Correo electrónico
+                        <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
+                    </label>
+
+                    <label class="auth-label">
+                        Contraseña
+                        <input type="password" required class="auth-input" placeholder="••••••••" />
+                    </label>
+
+                    <div class="auth-row">
+                        <label class="auth-checkbox">
+                            <input type="checkbox" />
+                            <span>Recordarme</span>
+                        </label>
+                        <button type="button" class="auth-link">
+                            ¿Olvidaste tu contraseña?
+                        </button>
+                    </div>
+
+                    <button type="submit" class="auth-btn-primary">
+                        Iniciar sesión
+                    </button>
+                </form>
+
+                <p class="auth-switch-text">
+                    ¿No tienes cuenta?
+                    <button type="button" class="auth-link" data-switch-auth="register">
+                        Regístrate aquí
+                    </button>
+                </p>
+            </div>
+
+            <!-- REGISTRO -->
+            <div id="auth-register" class="auth-panel hidden">
+                <h2 class="auth-title">Crea tu cuenta</h2>
+                <p class="auth-subtitle">
+                    Únete a AirFitness y empieza tu transformación hoy mismo.
+                </p>
+
+                <form class="auth-form">
+                    <label class="auth-label">
+                        Nombre completo
+                        <input type="text" required class="auth-input" placeholder="Nombre y apellido" />
+                    </label>
+
+                    <label class="auth-label">
+                        Correo electrónico
+                        <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
+                    </label>
+
+                    <label class="auth-label">
+                        Contraseña
+                        <input type="password" required class="auth-input" placeholder="Mínimo 8 caracteres" />
+                    </label>
+
+                    <label class="auth-label">
+                        Confirmar contraseña
+                        <input type="password" required class="auth-input" placeholder="Repite tu contraseña" />
+                    </label>
+
+                    <button type="submit" class="auth-btn-primary">
+                        Crear cuenta
+                    </button>
+                </form>
+
+                <p class="auth-switch-text">
+                    ¿Ya tienes cuenta?
+                    <button type="button" class="auth-link" data-switch-auth="login">
+                        Inicia sesión
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

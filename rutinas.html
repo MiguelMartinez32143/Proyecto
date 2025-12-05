@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutinas - AirFitness</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body class="site">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+
+        <!-- LEFT -->
+        <div class="nav-left">
+          <a href="index.html#inicio" class="nav-link">Inicio</a>
+          <a href="index.html#beneficios" class="nav-link">Beneficios</a>
+          <a href="index.html#membresias" class="nav-link">Membresías</a>
+
+          <div class="nav-more">
+            <button class="nav-link nav-more-btn" type="button">Más ▾</button>
+
+            <div class="nav-more-menu">
+              <a href="sucursales.html" class="nav-more-item">Sucursales</a>
+              <a href="rutinas.html" class="nav-more-item">Rutinas</a>
+              <a href="contacto.html" class="nav-more-item">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER -->
+        <div class="nav-center">
+          <a href="index.html#inicio" class="logo-mark">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img">
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="nav-right">
+          <button class="btn btn-outline-light" data-open-auth="login">Iniciar sesión</button>
+          <button class="btn btn-primary" data-open-auth="register">Registrarse</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="rutina-hero">
+      <h1>Rutina activa hoy</h1>
+      <p>Construye fuerza real con cada movimiento. Tu cuerpo responde a lo que exiges de él.</p>
+    </section>
+
+
+    <!-- SECUENCIA -->
+    <section class="sequence-section">
+      <h3>Secuencia</h3>
+      <h2>Tu camino hacia la fuerza</h2>
+      <p>Cada ejercicio construye sobre el anterior. Sigue el ritmo, respeta el proceso.</p>
+
+      <div class="sequence-tags">
+        <span class="sequence-tag active">Descanso</span>
+        <span class="sequence-tag">Calentamiento dinámico</span>
+        <span class="sequence-tag">Movilidad articular</span>
+        <span class="sequence-tag">Preparación del cuerpo →</span>
+      </div>
+    </section>
+
+
+    <!-- SLIDER -->
+    <section class="slider-container">
+
+      <button class="slider-btn" id="sliderPrev">◀</button>
+
+      <div class="slider-track" id="sliderTrack">
+        <div class="slider-item">
+          <img src="imagenes/sentadilla.webp" alt="Ejercicio 1" class="slider-img">
+        </div>
+
+        <div class="slider-item">
+          <img src="imagenes/pesoMuerto.jpg" alt="Ejercicio 2" class="slider-img">
+        </div>
+
+        <div class="slider-item">
+          <img src="imagenes/pressBanca.jpeg" alt="Ejercicio 3" class="slider-img">
+        </div>
+      </div>
+
+      <button class="slider-btn" id="sliderNext">▶</button>
+
+    </section>
+
+
+    <!-- Labels -->
+    <div class="exercise-labels">
+      <div>
+        <strong>Uno</strong>
+        <p>Sentadillas con barra, cuatro series de ocho repeticiones.</p>
+      </div>
+      <div>
+        <strong>Dos</strong>
+        <p>Peso muerto rumano, tres series de diez repeticiones.</p>
+      </div>
+      <div>
+        <strong>Tres</strong>
+        <p>Prensa de pecho, cuatro series de ocho repeticiones.</p>
+      </div>
+    </div>
+
+
+    <!-- EJERCICIOS DE HOY -->
+    <section class="exercise-section">
+      <h3>Movimientos</h3>
+      <h2>Ejercicios de hoy</h2>
+      <p>Domina cada movimiento con técnica limpia</p>
+
+      <div class="exercise-grid">
+
+        <div class="exercise-card">
+          <small>Avanzado</small>
+          <h4>Sentadillas con barra</h4>
+          <p>Piernas, glúteos, estabilidad del core</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+        <div class="exercise-card">
+          <small>Avanzado</small>
+          <h4>Peso muerto rumano</h4>
+          <p>Cadena posterior, isquiotibiales, espalda baja</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+        <div class="exercise-card">
+          <small>Intermedio</small>
+          <h4>Flexiones de brazos</h4>
+          <p>Pecho, tríceps, estabilidad del core</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+        <div class="exercise-card">
+          <small>Intermedio</small>
+          <h4>Estiramiento profundo</h4>
+          <p>Recuperación, flexibilidad, prevención de lesiones</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+        <div class="exercise-card">
+          <small>Avanzado</small>
+          <h4>Prensa de pecho con barra</h4>
+          <p>Pecho, hombros, tríceps</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+        <div class="exercise-card">
+          <small>Intermedio</small>
+          <h4>Remo con barra</h4>
+          <p>Espalda, dorsales, fuerza de tracción</p>
+          <a href="#" class="card-link">Detalles →</a>
+          <div class="exercise-thumb"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GUARDAR PROGRESO -->
+    <section class="save-section">
+      <h2>Guarda tu progreso hoy</h2>
+      <p>Registra cada sesión y observa cómo tu fuerza crece con el tiempo.</p>
+
+      <div class="save-buttons">
+        <button class="btn btn-primary">Guardar</button>
+        <button class="btn btn-outline-light-alt">Compartir</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="imagenes/logo.jpeg" alt="AirFitness">
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Explorar</h4>
+          <a href="index.html#inicio" class="footer-link">Inicio</a>
+          <a href="index.html#beneficios" class="footer-link">Beneficios</a>
+          <a href="index.html#membresias" class="footer-link">Membresías</a>
+          <a href="sucursales.html" class="footer-link">Sucursales</a>
+          <a href="rutinas.html" class="footer-link">Rutinas</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Comunidad</h4>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="contacto.html" class="footer-link">Contacto</a>
+          <a href="#" class="footer-link">Soporte</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal</h4>
+          <a href="#" class="footer-link">Privacidad</a>
+          <a href="#" class="footer-link">Términos</a>
+          <a href="#" class="footer-link">Cookies</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Suscribirse</h4>
+          <form class="footer-form">
+            <input type="email" placeholder="Tu correo electrónico" class="footer-input" required>
+            <button class="btn btn-primary footer-btn" type="submit">Suscribir</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2024 AirFitness. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODALES LOGIN / REGISTRO ========== -->
+  <div id="auth-overlay" class="auth-overlay hidden">
+    <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="auth-close" type="button" data-close-auth>&times;</button>
+
+      <!-- LOGIN -->
+      <div id="auth-login" class="auth-panel">
+        <h2 id="auth-title" class="auth-title">Inicia sesión</h2>
+        <p class="auth-subtitle">
+          Accede a tus rutinas, progreso y membresía activa en AirFitness.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Correo electrónico
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input type="password" required class="auth-input" placeholder="••••••••" />
+          </label>
+
+          <div class="auth-row">
+            <label class="auth-checkbox">
+              <input type="checkbox" />
+              <span>Recordarme</span>
+            </label>
+            <button type="button" class="auth-link">
+              ¿Olvidaste tu contraseña?
+            </button>
+          </div>
+
+          <button type="submit" class="auth-btn-primary">
+            Iniciar sesión
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿No tienes cuenta?
+          <button type="button" class="auth-link" data-switch-auth="register">
+            Regístrate aquí
+          </button>
+        </p>
+      </div>
+
+      <!-- REGISTRO -->
+      <div id="auth-register" class="auth-panel hidden">
+        <h2 class="auth-title">Crea tu cuenta</h2>
+        <p class="auth-subtitle">
+          Únete a AirFitness y empieza tu transformación hoy mismo.
+        </p>
+
+        <form class="auth-form">
+          <label class="auth-label">
+            Nombre completo
+            <input type="text" required class="auth-input" placeholder="Nombre y apellido" />
+          </label>
+
+          <label class="auth-label">
+            Correo electrónico
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
+          </label>
+
+          <label class="auth-label">
+            Contraseña
+            <input type="password" required class="auth-input" placeholder="Mínimo 8 caracteres" />
+          </label>
+
+          <label class="auth-label">
+            Confirmar contraseña
+            <input type="password" required class="auth-input" placeholder="Repite tu contraseña" />
+          </label>
+
+          <button type="submit" class="auth-btn-primary">
+            Crear cuenta
+          </button>
+        </form>
+
+        <p class="auth-switch-text">
+          ¿Ya tienes cuenta?
+          <button type="button" class="auth-link" data-switch-auth="login">
+            Inicia sesión
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AirFitness - Contacto</title>
 
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
@@ -22,49 +17,44 @@
   <!-- JS -->
   <script src="script.js" defer></script>
 </head>
+
 <body class="site">
+  <!-- ========== HEADER ========== -->
   <!-- ========== HEADER ========== -->
   <header class="site-header">
     <div class="container header-inner">
       <nav class="nav">
+
+        <!-- LEFT -->
         <div class="nav-left">
+          <a href="index.html#inicio" class="nav-link">Inicio</a>
           <a href="index.html#beneficios" class="nav-link">Beneficios</a>
           <a href="index.html#membresias" class="nav-link">Membresías</a>
+
           <div class="nav-more">
-            <button class="nav-link nav-more-btn" type="button">
-              Más ▾
-            </button>
+            <button class="nav-link nav-more-btn" type="button">Más ▾</button>
+
             <div class="nav-more-menu">
-              <a href="sucursales.html#inicio" class="nav-more-item">Sucursales</a>
-              <a href="index.html#testimonios" class="nav-more-item">Testimonios</a>
-              <a href="#contacto" class="nav-more-item">Contacto</a>
+              <a href="sucursales.html" class="nav-more-item">Sucursales</a>
+              <a href="rutinas.html" class="nav-more-item">Rutinas</a>
+              <a href="contacto.html" class="nav-more-item">Contacto</a>
             </div>
           </div>
         </div>
 
+        <!-- CENTER -->
         <div class="nav-center">
-          <!-- Logo como imagen -->
-          <a href="index.html#inicio" class="logo-mark" aria-label="Ir al inicio AirFitness">
-            <img src="logo.jpeg" alt="AirFitness" class="logo-img" />
+          <a href="index.html#inicio" class="logo-mark">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img">
           </a>
         </div>
 
+        <!-- RIGHT -->
         <div class="nav-right">
-          <button
-            class="btn btn-outline-light"
-            type="button"
-            data-open-auth="login"
-          >
-            Iniciar sesión
-          </button>
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-open-auth="register"
-          >
-            Registrarse
-          </button>
+          <button class="btn btn-outline-light" data-open-auth="login">Iniciar sesión</button>
+          <button class="btn btn-primary" data-open-auth="register">Registrarse</button>
         </div>
+
       </nav>
     </div>
   </header>
@@ -92,7 +82,8 @@
             <p class="contact-eyebrow">Formulario</p>
             <h2 class="contact-title">Envíanos tu mensaje</h2>
             <p class="contact-text">
-              Completa los datos y nos pondremos en contacto contigo para resolver tus dudas o ayudarte a elegir el plan ideal.
+              Completa los datos y nos pondremos en contacto contigo para resolver tus dudas o ayudarte a elegir el plan
+              ideal.
             </p>
 
             <ul class="contact-data-list">
@@ -105,13 +96,13 @@
               <li>
                 <span class="contact-data-label">Teléfono</span>
                 <a href="tel:+56912345678" class="contact-data-link">
-                  +56 9 1234 5678
+                  +57 321 940 4978
                 </a>
               </li>
               <li>
                 <span class="contact-data-label">Dirección</span>
                 <p class="contact-data-text">
-                  Av. Fitness 1230, Santiago, Chile
+                  Av. Fitness 1230, Bogota, Colombia
                 </p>
               </li>
             </ul>
@@ -138,7 +129,7 @@
                 </label>
                 <label class="contact-field">
                   Teléfono
-                  <input type="tel" class="contact-input" placeholder="+56 9 1234 5678" />
+                  <input type="tel" class="contact-input" placeholder="+57 321 940 4932" />
                 </label>
               </div>
 
@@ -161,27 +152,27 @@
                   <legend>¿Cuál es tu perfil?</legend>
                   <div class="contact-options-grid">
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="principiante" />
                       <span>Principiante</span>
                     </label>
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="intermedio" />
                       <span>Intermedio</span>
                     </label>
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="avanzado" />
                       <span>Avanzado</span>
                     </label>
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="atleta" />
                       <span>Atleta profesional</span>
                     </label>
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="otro-perfil" />
                       <span>Otro perfil</span>
                     </label>
                     <label class="contact-option">
-                      <input type="radio" name="perfil" />
+                      <input type="radio" name="perfil" value="otro" />
                       <span>Otro</span>
                     </label>
                   </div>
@@ -191,12 +182,8 @@
               <div class="contact-row">
                 <label class="contact-field">
                   Mensaje
-                  <textarea
-                    class="contact-input contact-textarea"
-                    rows="4"
-                    placeholder="Escribe tu consulta aquí"
-                    required
-                  ></textarea>
+                  <textarea class="contact-input contact-textarea" rows="4" placeholder="Escribe tu consulta aquí"
+                    required></textarea>
                 </label>
               </div>
 
@@ -223,7 +210,7 @@
       <div class="footer-top">
         <div class="footer-col">
           <div class="footer-logo">
-            <img src="logo.jpeg" alt="AirFitness" />
+            <img src="imagenes/logo.jpeg" alt="AirFitness" />
           </div>
         </div>
         <div class="footer-col">
@@ -231,7 +218,7 @@
           <a href="index.html#inicio" class="footer-link">Inicio</a>
           <a href="index.html#beneficios" class="footer-link">Beneficios</a>
           <a href="index.html#membresias" class="footer-link">Membresías</a>
-          <a href="sucursales.html#inicio" class="footer-link">Sucursales</a>
+          <a href="sucursales.html" class="footer-link">Sucursales</a>
         </div>
         <div class="footer-col">
           <h4 class="footer-heading">Comunidad</h4>
@@ -247,12 +234,7 @@
             actualizaciones de AirFitness.
           </p>
           <form class="footer-form">
-            <input
-              type="email"
-              class="footer-input"
-              placeholder="Tu correo electrónico"
-              required
-            />
+            <input type="email" class="footer-input" placeholder="Tu correo electrónico" required />
             <button class="btn btn-primary footer-btn" type="submit">
               Suscribir
             </button>
@@ -275,12 +257,7 @@
 
   <!-- ========== MODALES LOGIN / REGISTRO ========== -->
   <div id="auth-overlay" class="auth-overlay hidden">
-    <div
-      class="auth-modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="auth-title"
-    >
+    <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
       <button class="auth-close" type="button" data-close-auth>&times;</button>
 
       <!-- LOGIN -->
@@ -293,22 +270,12 @@
         <form class="auth-form">
           <label class="auth-label">
             Correo electrónico
-            <input
-              type="email"
-              required
-              class="auth-input"
-              placeholder="tucorreo@ejemplo.com"
-            />
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
           </label>
 
           <label class="auth-label">
             Contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="••••••••"
-            />
+            <input type="password" required class="auth-input" placeholder="••••••••" />
           </label>
 
           <div class="auth-row">
@@ -328,11 +295,7 @@
 
         <p class="auth-switch-text">
           ¿No tienes cuenta?
-          <button
-            type="button"
-            class="auth-link"
-            data-switch-auth="register"
-          >
+          <button type="button" class="auth-link" data-switch-auth="register">
             Regístrate aquí
           </button>
         </p>
@@ -348,42 +311,22 @@
         <form class="auth-form">
           <label class="auth-label">
             Nombre completo
-            <input
-              type="text"
-              required
-              class="auth-input"
-              placeholder="Nombre y apellido"
-            />
+            <input type="text" required class="auth-input" placeholder="Nombre y apellido" />
           </label>
 
           <label class="auth-label">
             Correo electrónico
-            <input
-              type="email"
-              required
-              class="auth-input"
-              placeholder="tucorreo@ejemplo.com"
-            />
+            <input type="email" required class="auth-input" placeholder="tucorreo@ejemplo.com" />
           </label>
 
           <label class="auth-label">
             Contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="Mínimo 8 caracteres"
-            />
+            <input type="password" required class="auth-input" placeholder="Mínimo 8 caracteres" />
           </label>
 
           <label class="auth-label">
             Confirmar contraseña
-            <input
-              type="password"
-              required
-              class="auth-input"
-              placeholder="Repite tu contraseña"
-            />
+            <input type="password" required class="auth-input" placeholder="Repite tu contraseña" />
           </label>
 
           <button type="submit" class="auth-btn-primary">
@@ -393,11 +336,7 @@
 
         <p class="auth-switch-text">
           ¿Ya tienes cuenta?
-          <button
-            type="button"
-            class="auth-link"
-            data-switch-auth="login"
-          >
+          <button type="button" class="auth-link" data-switch-auth="login">
             Inicia sesión
           </button>
         </p>
@@ -405,4 +344,16 @@
     </div>
   </div>
 </body>
+
+<div id="contact-success-modal" class="success-modal hidden">
+  <div class="success-modal-content">
+    <h2>¡Mensaje enviado!</h2>
+    <p>Hemos recibido tu consulta y nos pondremos en contacto contigo pronto.</p>
+
+    <button class="btn btn-primary" id="success-close-btn">
+      Cerrar
+    </button>
+  </div>
+</div>
+
 </html>
