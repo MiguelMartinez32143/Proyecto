@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirFitness - Dashboard</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="dashboard.js" defer></script>
+</head>
+
+<body class="site">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+
+        <div class="nav-left">
+          <a href="index.html#inicio" class="nav-link">Inicio</a>
+          <a href="rutinas.html" class="nav-link">Rutinas</a>
+          <a href="sucursales.html" class="nav-link">Sucursales</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+
+        <div class="nav-center">
+          <a href="index.html#inicio" class="logo-mark">
+            <img src="imagenes/logo.jpeg" alt="AirFitness" class="logo-img">
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <span class="nav-user-pill">
+            <span class="nav-user-label">Sesión activa</span>
+            <span class="nav-user-name" id="dashboard-username-pill">Usuario</span>
+          </span>
+          <button id="logout-btn" class="btn btn-outline-light small">Cerrar sesión</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL ========== -->
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="section section-dark">
+      <div class="container">
+
+        <header class="section-header section-header-dark">
+          <p class="section-eyebrow">Panel personal</p>
+          <h1 class="section-title">Bienvenido, <span id="dashboard-username">Usuario</span></h1>
+          <p class="section-description">
+            Accede a tus datos, rutinas recomendadas y configuración de cuenta.
+          </p>
+        </header>
+
+      </div>
+    </section>
+
+    <!-- GRID PRINCIPAL -->
+    <section class="section">
+      <div class="container">
+
+        <div class="grid-3">
+
+          <!-- CARD DATOS DE USUARIO -->
+          <article class="card">
+            <div class="card-body">
+              <p class="card-tag">Cuenta</p>
+              <h3 class="card-title">Información personal</h3>
+
+              <ul class="dashboard-list">
+                <li><strong>Nombre:</strong> <span id="dashboard-name"></span></li>
+                <li><strong>Correo:</strong> <span id="dashboard-email"></span></li>
+                <li><strong>Sesión:</strong> Activa</li>
+              </ul>
+
+              <button id="delete-account-btn" class="btn btn-primary mt-1">
+                Eliminar cuenta
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
